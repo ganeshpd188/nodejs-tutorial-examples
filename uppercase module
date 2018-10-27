@@ -1,6 +1,6 @@
 var uc=require('upper-case');
 var http = require('http');
-http.createServer(function(req,res){
+http.createServer(function(req,res){ // this will create the server
   res.write(uc("hello world"));
   res.end();
 }).listen(8080);
